@@ -8,9 +8,10 @@ services:
     volumes:
       - ./:/srv/app
       - ./docker/php/conf.d/app.dev.ini:/usr/local/etc/php/conf.d/app.dev.ini:ro
+      - ./var/coverage:/srv/app/var/coverage
       # If you develop on Mac or Windows you can remove the vendor/ directory
       #  from the bind-mount for better performance by enabling the next line:
-      #- /srv/app/vendor
+      - /srv/app/vendor
     environment:
       # See https://xdebug.org/docs/all_settings#mode 
       XDEBUG_MODE: "${XDEBUG_MODE:-off}"
@@ -24,4 +25,19 @@ services:
       - ./docker/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
 
 ###> symfony/mercure-bundle ###
+  mercure:
+    ports:
+      - "80"
 ###< symfony/mercure-bundle ###
+
+###> doctrine/doctrine-bundle ###
+  database:
+    ports:
+      - "5432"
+###< doctrine/doctrine-bundle ###
+
+###> symfony/mailer ###
+  mailer:
+    image: schickling/mailcatcher
+    ports: [1025, 1080]
+###< symfony/mailer ###
