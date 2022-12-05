@@ -3,7 +3,7 @@
 :test_tube: A playground to test the new Symfony 6+ features in real conditions!
 
 ## Dev Env
-- `Symfony 6.1`
+- `Symfony 6.2`
 - `PHP 8.1`
 - `Docker support`
 - `PHPUnit 9.5`
