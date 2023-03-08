@@ -1,14 +1,21 @@
-# name: Auto-merge
+name: Auto-merge dependabot
 
-# on:
-#   pull_request:
+on:
+  pull_request:
+    branches: [ main ]
 
-# jobs:
-#   auto-merge:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: ahmadnassri/action-dependabot-auto-merge@v2
-#         with:
-#           target: minor
-#           github-token: ${{ secrets.GITHUB_TOKEN }} 
+jobs:
+  auto-merge:
+    name: Auto-merge dependabot
+    runs-on: ubuntu-latest
+    needs: [ build-and-tests, php-cs-fixer, linters ]
+    steps:
+      - name: Autoriser la fusion automatique
+        uses: peter-evans/auto-merge@v2.6.0
+        with:
+          commit-message: 'Fusion automatique de la pull request'
+          commit-author: 'Mon Nom <monemail@example.com>'
+          pr-label: 'auto-merge'
+          merge-method: 'squash'
+          delete-branch: true
+          allow-merge-failure: true
