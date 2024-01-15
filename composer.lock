@@ -8773,24 +8773,23 @@
         },
         {
             "name": "friends-of-behat/symfony-extension",
-            "version": "v2.4.2",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfBehat/SymfonyExtension.git",
-                "reference": "957df89b214f1575b40203e374bcafcd6d200a1d"
+                "reference": "92653f5c8a5d14300434411eb76aed584802e722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfBehat/SymfonyExtension/zipball/957df89b214f1575b40203e374bcafcd6d200a1d",
-                "reference": "957df89b214f1575b40203e374bcafcd6d200a1d",
+                "url": "https://api.github.com/repos/FriendsOfBehat/SymfonyExtension/zipball/92653f5c8a5d14300434411eb76aed584802e722",
+                "reference": "92653f5c8a5d14300434411eb76aed584802e722",
                 "shasum": ""
             },
             "require": {
                 "behat/behat": "^3.6.1",
-                "php": "^7.4 || ^8.0",
-                "symfony/dependency-injection": "^4.4 || ^5.3 || ^6.0",
-                "symfony/http-kernel": "^4.4 || ^5.3 || ^6.0",
-                "symfony/proxy-manager-bridge": "^4.4 || ^5.3 || ^6.0"
+                "php": "^8.1",
+                "symfony/dependency-injection": "^6.2 || ^7.0",
+                "symfony/http-kernel": "^6.2 || ^7.0"
             },
             "require-dev": {
                 "behat/mink": "^1.9",
@@ -8800,10 +8799,10 @@
                 "friends-of-behat/page-object-extension": "^0.3.2",
                 "friends-of-behat/service-container-extension": "^1.1",
                 "sylius-labs/coding-standard": ">=4.1.1, <=4.2.1",
-                "symfony/browser-kit": "^4.4 || ^5.3 || ^6.0",
-                "symfony/framework-bundle": "^4.4 || ^5.3 || ^6.0",
-                "symfony/process": "^4.4 || ^5.3 || ^6.0",
-                "symfony/yaml": "^4.4 || ^5.3 || ^6.0",
+                "symfony/browser-kit": "^6.2 || ^7.0",
+                "symfony/framework-bundle": "^6.2 || ^7.0",
+                "symfony/process": "^6.2 || ^7.0",
+                "symfony/yaml": "^6.2 || ^7.0",
                 "vimeo/psalm": "4.30.0"
             },
             "suggest": {
@@ -8836,9 +8835,9 @@
             "description": "Integrates Behat with Symfony.",
             "support": {
                 "issues": "https://github.com/FriendsOfBehat/SymfonyExtension/issues",
-                "source": "https://github.com/FriendsOfBehat/SymfonyExtension/tree/v2.4.2"
+                "source": "https://github.com/FriendsOfBehat/SymfonyExtension/tree/v2.5.0"
             },
-            "time": "2023-12-09T12:17:26+00:00"
+            "time": "2024-01-11T14:57:03+00:00"
         },
         {
             "name": "friendsofphp/php-cs-fixer",
