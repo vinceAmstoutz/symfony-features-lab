@@ -8297,23 +8297,23 @@
         },
         {
             "name": "dbrekelmans/bdi",
-            "version": "1.0.5",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbrekelmans/bdi.git",
-                "reference": "574d3f5b4f6155acfb43def0461ea3a63fbdcf95"
+                "reference": "46e5f8ec09bac842ab569c02e64476408aa46ef8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbrekelmans/bdi/zipball/574d3f5b4f6155acfb43def0461ea3a63fbdcf95",
-                "reference": "574d3f5b4f6155acfb43def0461ea3a63fbdcf95",
+                "url": "https://api.github.com/repos/dbrekelmans/bdi/zipball/46e5f8ec09bac842ab569c02e64476408aa46ef8",
+                "reference": "46e5f8ec09bac842ab569c02e64476408aa46ef8",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-zip": "*",
                 "ext-zlib": "*",
-                "php": "^7.2|^8.0"
+                "php": "^8.1"
             },
             "bin": [
                 "bdi",
@@ -8340,9 +8340,9 @@
                 "browser-driver-installer"
             ],
             "support": {
-                "source": "https://github.com/dbrekelmans/bdi/tree/1.0.5"
+                "source": "https://github.com/dbrekelmans/bdi/tree/1.3.0"
             },
-            "time": "2023-09-11T09:00:16+00:00"
+            "time": "2024-02-22T15:29:35+00:00"
         },
         {
             "name": "doctrine/data-fixtures",
